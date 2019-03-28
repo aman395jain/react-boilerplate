@@ -1,0 +1,33 @@
+.car-details {
+  background: url("../../../assets/images/car_Detail_view.png") top left
+    no-repeat;
+  background-position-y: -117px;
+  height: 1250px;
+  padding-top: 228px;
+
+  .car-image {
+    width: 416px;
+  }
+  .incident-number {
+    background-color: bisque;
+    width: 180px;
+    margin-top: 175px;
+    margin-left: 455px;
+  }
+  .car-video {
+    background-color: aqua;
+    flex: 1 1;
+    border-radius: 4px;
+    position: relative;
+    margin-right: -11px;
+    height: 399px;
+  }
+  .car-id {
+    position: absolute;
+    top: -62px;
+    width: 275px;
+    right: 34px;
+    padding: 10px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,23 @@
+.user-list {
+  form.form-inline {
+    position: relative;
+    .dropdown {
+      position: static;
+      .dropdown-menu {
+        right: -8px !important;
+        top: 50px !important;
+        transform: inherit !important;
+        left: inherit !important;
+      }
+    }
+  }
+}
+.user-list-table {
+  .rt-thead {
+    .rt-th {
+      &:first-child {
+        padding-right: 0;
+      }
+    }
+  }
+}

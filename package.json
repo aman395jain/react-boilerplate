@@ -1,0 +1,53 @@
+{
+  "name": "TrilliumWebPortal",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "env-cmd": "^8.0.2",
+    "history": "^4.7.2",
+    "lodash": "^4.17.11",
+    "node-sass": "^4.11.0",
+    "popper.js": "^1.14.7",
+    "react": "^16.8.4",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.8.4",
+    "react-reactive-form": "^1.0.28",
+    "react-redux": "^6.0.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.8",
+    "react-table": "^6.9.2",
+    "react-tooltip": "^3.10.0",
+    "redux": "^4.0.1",
+    "redux-form": "^8.1.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "throttle-debounce": "^2.1.0"
+  },
+  "scripts": {
+    "start": "env-cmd ./env/.dev.env react-scripts start",
+    "build:staging": "env-cmd ./env/.staging.env node scripts/build.js",
+    "clean": "rm -rf ./build",
+    "build:prod": "npm run clean && env-cmd ./env/.prod.env node scripts/build.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "babel-jest": "^23.6.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "jest": "^23.6.0",
+    "jest-cli": "^23.6.0"
+  }
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "userId": 1,
+    "firstName": "string",
+    "lastName": "string",
+    "userPhoto": null,
+    "status": "New",
+    "userContact": {
+      "contactId": 1,
+      "address": "string",
+      "city": "string",
+      "state": "string",
+      "zip": "string",
+      "continent": "string",
+      "country": "string",
+      "phoneNo": "string",
+      "emailId": "string",
+      "createdDate": "2019-02-20T05:38:24.000+0000",
+      "modifiedDate": "2019-02-20T05:38:24.000+0000"
+    },
+    "userOrganization": {
+      "organization": "string",
+      "employeeId": 0
+    },
+    "createdByUserId": 0,
+    "modifiedByUserId": 0,
+    "createdDate": "2019-03-20T05:38:24.000+0000",
+    "modifiedDate": "2019-03-20T05:38:24.000+0000"
+  },
+  {
+    "userId": 2,
+    "firstName": "Test Rao",
+    "lastName": "Rao",
+    "userPhoto": null,
+    "status": "New",
+    "userContact": {
+      "contactId": 2,
+      "address": "Del",
+      "city": "Delhi",
+      "state": "3211",
+      "zip": "12222",
+      "continent": "Asia",
+      "country": "India",
+      "phoneNo": "11111",
+      "emailId": "test@hotmail.com",
+      "createdDate": "2019-02-20T05:39:20.000+0000",
+      "modifiedDate": "2019-02-20T05:39:20.000+0000"
+    },
+    "userOrganization": {
+      "organization": "HCL",
+      "employeeId": 10
+    },
+    "createdByUserId": 1,
+    "modifiedByUserId": 1,
+    "createdDate": "2019-02-20T05:39:20.000+0000",
+    "modifiedDate": "2019-02-20T05:39:20.000+0000"
+  },
+  {
+    "userId": 3,
+    "firstName": "string",
+    "lastName": "string",
+    "userPhoto": null,
+    "status": "New",
+    "userContact": {
+      "contactId": 3,
+      "address": "string",
+      "city": "string",
+      "state": "string",
+      "zip": "string",
+      "continent": "string",
+      "country": "string",
+      "phoneNo": "string",
+      "emailId": "string",
+      "createdDate": "2019-02-20T05:38:24.000+0000",
+      "modifiedDate": "2019-02-20T05:38:24.000+0000"
+    },
+    "userOrganization": {
+      "organization": "string",
+      "employeeId": 0
+    },
+    "createdByUserId": 0,
+    "modifiedByUserId": 0,
+    "createdDate": "2019-02-20T05:38:24.000+0000",
+    "modifiedDate": "2019-02-20T05:38:24.000+0000"
+  }
+]

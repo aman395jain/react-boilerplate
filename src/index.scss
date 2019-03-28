@@ -1,0 +1,14 @@
+@import "./assets/styles/variables"; // Use to replace variable of bootstrap library
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~react-table/react-table.css";
+
+// Globally applied SCSS
+@import "./assets/styles/global";
+@import "./assets/styles/buttons";
+@import "./assets/styles/custom-table";
+@import "./assets/styles/form";
+@import "./assets/styles//modal";
+
+// Component Based SCSS
+@import "./components/user/userManagement";
+@import "./components/login/login-page/loginPage";

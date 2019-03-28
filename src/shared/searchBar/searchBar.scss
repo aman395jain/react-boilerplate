@@ -1,0 +1,85 @@
+.searchBar-font {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.73);
+}
+
+.searchBar-input {
+  width: 100%;
+  border: none;
+  height: 44px;
+  font-size: 20px;
+  padding: 0 15px;
+}
+
+.seachBar {
+  @extend .searchBar-font;
+  width: 50%;
+  margin: auto;
+  margin-top: 10%;
+  // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px 1px rgba(0, 0, 0, 0.18);
+
+  .search-input-without-text {
+    input {
+      @extend .searchBar-font;
+      @extend .searchBar-input;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1),
+        0 2px 4px 1px rgba(0, 0, 0, 0.18);
+      border-radius: 6px;
+    }
+    input:focus {
+      outline: none;
+    }
+  }
+  .search-input {
+    input {
+      @extend .searchBar-font;
+      @extend .searchBar-input;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1),
+        0 2px 4px 1px rgba(0, 0, 0, 0.18);
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+    input:focus {
+      outline: none;
+    }
+  }
+
+  ul.searchBar-dropdown {
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px 1px rgba(0, 0, 0, 0.18);
+    max-height: 200px;
+    overflow: auto;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    li {
+      padding: 10px 5px;
+      border-top: none;
+      & :hover {
+        background-color: aqua;
+      }
+    }
+  }
+
+  ul.searchBar-dropdown-noresult {
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px 1px rgba(0, 0, 0, 0.18);
+    height: 40px;
+    overflow: auto;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    li {
+      padding: 10px 5px;
+      border-top: none;
+      & :hover {
+        background-color: aqua;
+      }
+    }
+  }
+}
