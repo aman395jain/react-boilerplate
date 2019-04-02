@@ -39,8 +39,8 @@ class SearchBox extends Component {
       searchData = employeeNameInSearchBar.sort().filter(v => regex.test(v));
     }
 
-    // console.log("in the searchText", searchData);
-    this.setState(() => ({ searchData, text: value }));
+    this.setState({ searchData: searchData, text: value });
+    // console.log("in the searchText", this.state.searchData);
   };
 
   handleKeyEsc = e => {

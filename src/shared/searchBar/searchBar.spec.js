@@ -13,6 +13,9 @@ beforeEach(() => {
     }
   };
 });
+
+jest.mock("../../services/searchBarService.js");
+
 describe("SearchBox", () => {
   const component = shallow(<SearchBox debug />);
 
@@ -34,6 +37,7 @@ describe("SearchBox", () => {
   });
 
   it("should test the search With Debounce Time", () => {
+    component.instance().autocompleteSearchDebounced = jest.fn();
     component.instance().searchWithDebounceTime(
       (events = {
         target: {
@@ -42,5 +46,28 @@ describe("SearchBox", () => {
       })
     );
     expect(component.state().text).toBe("test");
+    expect(
+      component.instance().autocompleteSearchDebounced
+    ).toHaveBeenCalledWith(component.state().text);
+  });
+
+  it("should test the search Text", () => {
+    let searchData = [],
+      employeeNameInSearchBar = [];
+    // console.log("in the search text", component.instance().searchDataFromAPI);
+    component.instance().value = component.state().text;
+    component.instance().searchText();
+    expect(component.state().text).toHaveLength(4);
+    component.instance().searchDataFromAPI.forEach(empName => {
+      employeeNameInSearchBar.push(empName.employee_name);
+
+      //   component
+      //     .instance()
+      //     .searchText.employeeNameInSearchBar.push(empName.employee_name);
+    });
+
+    const regex = new RegExp(`^${component.instance().value}`, "i");
+    searchData = employeeNameInSearchBar.sort().filter(v => regex.test(v));
+    console.log("in the search text", component.state().searchData);
   });
 });
